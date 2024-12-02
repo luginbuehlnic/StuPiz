@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('Helvetica.ttc') format('truetype');
+}
+
+* {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*.prototype {
+} */
+
+header{
+  background-image: url('../img/backgroundHomepage.png');
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+.download {
+  flex: 1;
+  text-align: right;
+}
+
+.burger-icon {
+  display: none; /* Hidden by default for larger screens */
+  cursor: pointer;
+  z-index: 10;
+}
+
+.burger-icon img {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.7s ease-in-out;
+  /*transition: all 0.7s ease;  Optional smooth transition */
+}
+
+/* Hide Checkbox */
+.menu-toggle {
+  display: none;
+}
+
+.nav{
+  flex: 1;
+  /* justify-content: space-between;
+  align-items: center; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.nav_links {
+  /* list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px; */
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links li a {
+  /* display: block;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 15px 0px 15px;
+  color: black; */
+
+  text-decoration: none;
+  padding: 0 1rem;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+
+  .nav_links {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position below header */
+    left: 0;
+    flex-direction: column; /* Vertical layout */
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0;
+  }
+
+  /* Show Navigation When Checked */
+  .menu-toggle:checked ~ .nav .nav_links {
+      display: flex;
+  }
+
+  /* Display Burger Icon */
+  .burger-icon {
+      display: block;
+      background-color: black;
+  }
+
+  /* Swap Burger Icon to Close Icon When Checked */
+  .menu-toggle:checked + .burger-icon img {
+      content: url('../img/CloseIcon.svg'); /* Replace with CloseMenu.svg */
+  }
+
+  /* Hide Logo and Download Button When Checked */
+  .menu-toggle:checked ~ .logo,
+  .menu-toggle:checked ~ .download {
+      display: none;
+  }
+}
