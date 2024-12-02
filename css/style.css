@@ -1,1 +1,11 @@
-/*For the design/*
+@font-face {
+  font-family: 'Helvetica';
+  src: url('fonts/Helvetica.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
