@@ -179,6 +179,54 @@ footer a, .footer-links, .some-links{
   gap: 10px;
 }
 
+
+/* News page styling */
+
+.news{
+  margin: 10px;
+  box-sizing:border-box;
+  position: relative;
+}
+
+.zwei_ueberschriften{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+}
+
+.zwei_ueberschriften_right{
+  position: absolute;
+  bottom: 20px;
+  left: 650px;
+  color: white;
+}
+
+.zwei_ueberschriften_right h2{
+  width: 305.7px;
+  font-size: 48px;
+  color: #ffd36c;
+  text-align: left;
+}
+
+.zwei_ueberschriften_right p{
+  font-size: 24px;
+  color: white;
+  letter-spacing: 0.01em;
+}
+
+.zwei_ueberschriften h3{
+  font-size: 24px;
+  color: #f8fffa;
+}
+
+.subtitle{
+  font-size: 45.75px;
+  color: #fff;
+}
+
+
+/* FAQ Page Styling */
 .faq {
   margin-top: 50px;
 }
