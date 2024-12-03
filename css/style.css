@@ -188,6 +188,103 @@ footer a, .footer-links, .some-links{
   position: relative;
 }
 
+.bignews{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+  position: relative;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 50px;
+}
+
+.image-container{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image-container img{
+  display: block; /* Ensure no extra space around the image */
+  width: 100%; /* Optional: Adjust to control image size */
+  height: auto;
+}
+
+.overlay-text{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  text-align: right;
+}
+
+.overlay-text h2, .overlay-text p, .overlay-text button{
+  margin: 5px 0;
+}
+
+.overlay-text h2 {
+  font-size: 48px;
+  color: #ffd36c;
+}
+
+.overlay-text button {
+  background-color: white; /* Button background */
+  color: black; /* Button text color */
+  padding: 8px 12px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor for button */
+  font-size: 1rem;
+}
+
+.overlay-text button:hover {
+  background-color: #f0f0f0; /* Hover effect */
+}
+
+.grossenewsbilder{
+  display: block; /* Ensure no extra space around the image */
+  width: 100%; /* Optional: Adjust to control image size */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .bignews{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .overlay-text {
+      bottom: 5px;
+      right: 5px;
+      padding: 5px;
+  }
+
+  .overlay-text h2 {
+      font-size: 1.5rem;
+      color: #ffd36c;
+  }
+
+  .overlay-text p {
+      font-size: 0.9rem;
+  }
+
+  .overlay-text button {
+      font-size: 0.8rem;
+      padding: 6px 8px;
+  }
+}
+
+/* .zwei_ueberschriften_right{
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);;
+} */
+
 .zwei_ueberschriften{
   position: absolute;
   bottom: 8px;
@@ -195,12 +292,7 @@ footer a, .footer-links, .some-links{
   color: white;
 }
 
-.zwei_ueberschriften_right{
-  position: absolute;
-  bottom: 20px;
-  left: 650px;
-  color: white;
-}
+
 
 .zwei_ueberschriften_right h2{
   width: 305.7px;
