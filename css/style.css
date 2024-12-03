@@ -3,33 +3,40 @@
   src: url('Helvetica.ttc') format('truetype');
 }
 
+:root {
+  --primary-color: #15243C;
+  --secondary-color: #FFD36C;
+}
 * {
   font-family: 'Helvetica', sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
+  color: white;
+}
+
+html, body{
+  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
 }
-/* .image {
-  background-image: url('../img/backgroundHomepage.png');
-  position: absolute;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-  z-index: -1;
-}*/
 
-.prototype {
-} 
+main {
+  flex: 1;
+}
 
-header{
+#background-image{
   background-image: url('../img/backgroundHomepage.png');
   margin: 0;
   padding: 0;
+  position: relative;
+  background-size: cover;
 }
 
 .header {
@@ -40,17 +47,22 @@ header{
 .logo {
   flex: 1;
   text-align: center;
+  margin-top: 10px;
 }
 
 .download {
   flex: 1;
   text-align: right;
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
 .burger-icon {
   display: none; /* Hidden by default for larger screens */
   cursor: pointer;
   z-index: 10;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .burger-icon img {
@@ -63,27 +75,19 @@ header{
 /* Hide Checkbox */
 .menu-toggle {
   display: none;
+  margin-left: 15px;
 }
 
 .nav{
   flex: 1;
-  /* justify-content: space-between;
-  align-items: center; */
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
+  padding-top: 10px;
 }
 
 .nav_links {
-  /* list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px; */
-
   display: flex;
   list-style: none;
   margin: 0;
@@ -91,15 +95,147 @@ header{
 }
 
 .nav_links li a {
-  /* display: block;
-  box-sizing: border-box;
-  height: 40px;
-  padding: 10px 15px 0px 15px;
-  color: black; */
-
+  display: block;
   text-decoration: none;
   padding: 0 1rem;
-  color: #000;
+}
+
+.prototype {
+  margin-top: 50px; /* Adjust the space between the nav and the prototype */
+  padding: 20px;
+}
+
+.top-news h1{
+  margin-left: 30px;
+}
+
+.top-news-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.news-item{
+  margin: 10px;
+  box-sizing:border-box;
+  position: relative;
+}
+
+.news-img{
+
+}
+
+.zwei_ueberschriften{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.reviews h1{
+  margin-left: 30px;
+}
+
+.review-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.review-item{
+  margin: 10px;
+  box-sizing:border-box;
+  position: relative;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between  ;
+  margin: 0;
+  padding: 0;
+  gap:30px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  min-height: 82px;
+}
+
+footer a, .footer-links, .some-links{
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.faq {
+  margin-top: 50px;
+}
+.answers{
+  display: none;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.questions-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  gap: 10px;  
+}
+
+.questions-container h1{
+  margin-left: 30px;
+  width: 70%;
+}
+
+.questions {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  border-bottom: white 1px solid;
+  margin-bottom: 15px;
+}
+
+.plusIcon{
+  display: flex;
+  justify-content: center;
+}
+
+.questions h2{
+  text-align: left;
+  flex: 5;
+  margin: 0;
+}
+
+.questions img{
+  text-align: right;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.qst-toggle{
+  display: none;
+}
+
+.qst-toggle:checked ~ .answers{
+  display: block;
 }
 
 @media (max-width: 900px) {
@@ -123,7 +259,6 @@ header{
   /* Display Burger Icon */
   .burger-icon {
       display: block;
-      background-color: black;
   }
 
   /* Swap Burger Icon to Close Icon When Checked */
