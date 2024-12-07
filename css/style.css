@@ -492,6 +492,13 @@ footer a, .footer-links, .some-links{
 .faq {
   margin-top: 50px;
 }
+
+.faq h1{
+  margin-left: 25px;
+  font-size: 45.75px;
+  color: var(--secondary-color);
+}
+
 .answers{
   display: none;
   margin-top: 10px;
@@ -550,6 +557,86 @@ footer a, .footer-links, .some-links{
 
 .qst-toggle:checked + .plusIcon img {
   content: url('../img/minus_icon.svg'); /* Replace with CloseMenu.svg */
+}
+
+
+/* Contact Page Styling */
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 10px;  
+  width: 65%;
+}
+
+.contact h1{
+  font-size: 45.75px;
+  color: var(--secondary-color);
+}
+
+.form-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  /* align-content: space-around; */
+  margin: 0;
+  padding: 0;
+  gap: 10px;  
+}
+
+.horizontal-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap:10px
+}
+
+.horizontal-container input{
+  flex: 1;
+}
+
+form button{
+  margin-top: 30px;
+}
+
+input{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  padding: 10px;
+  color: #fff;
+}
+
+input:focus{
+  outline: none;
+}
+
+textarea{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgba(107, 107, 107, 0.246);
+  padding: 10px;
+  color: #fff;
+  height: 100px;
+}
+textarea:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: #fff;
 }
 
 /* Abou Us Styling */
@@ -748,7 +835,7 @@ footer a, .footer-links, .some-links{
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1080px) {
   #search-icon-button{
     display: inline-block;
     position: relative;

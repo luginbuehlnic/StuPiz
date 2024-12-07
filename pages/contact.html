@@ -19,8 +19,8 @@
                 <ul class="nav_links">
                     <li><a href="./news.html">Angebote</a></li>
                     <li><a href="./aboutUs.html">Über üs</a></li>
-                    <li><a href="./faqContact.html">FAQ</a></li>    
-                    <li><a href="./contact.html">Kontakt</a></li>  
+                    <li><a href="./faqContact.html">FAQ</a></li>   
+                    <li><a href="./contact.html">Kontakt</a></li> 
                 </ul>
             </nav>
             <div class="logo">
@@ -36,52 +36,24 @@
             </div>
         </div>
     </header>
-    <main>
-        <article class="bignews">
-            <div class="image-container">
-                <a href="#"> <img src="../img/Stöckli img.png" class="grossenewsbilder" alt="artikel 1"> </a>
-                <div class="overlay-text">
-                    <h2>Stöckli Ski</h2>
-                    <p>Bis zum 19. Dezember 15% Rabatt auf die <br>
-                        Stöckli Kollektion 2024. </p>
-                    <button class="transparentYellowButton" type="button">Jetzt kaufen</button>
-                </div>
-            </div>
-        </article>
-        <h2 class="subtitle"> Wiiteri Agebot </h2>
-        <div class="allNews">
-            <article class="medium-news">
-                <div class="image-container-small">
-                    <a href="#"> <img src="../img/Inter Sport img.png" class="mediumNewsbild" alt="artikel 1"> </a>
-                    <div class="overlay-text-small">
-                    <h3>15% bei Inter Sport Rent</h3>
+    <main class="contact-container">
+        <div class="contact">
+            <h1>Wie kömmer helfe?</h1>
+            <form action="/action_page.php" method="post">
+                <div class="form-container">
+                    <input placeholder="Betreff" type="text" id="ref" name="ref" required>
+                    <div class="horizontal-container">
+                        <input placeholder="Name" type="text" id="name" name="name" required>
+                        <input placeholder="Vorname" type="text" id="vorname" name="vorname" required>
                     </div>
-                </div>
-            </article>
-            <article class="small-news">
-                <div class="image-container-small">
-                    <a href="#"> <img src="../img/SaasFee.png" class="smallNewsbild" alt="artikel 1"> </a>
-                    <div class="overlay-text-small">
-                    <h3>10% auf Bergbahnen Saas-Fee</h3>
+                    <div class="horizontal-container">
+                        <input placeholder="E-Mail" type="email" id="email" name="email" required>
+                        <input placeholder="Telefon" type="tel" id="tel" name="tel" required>
                     </div>
+                    <textarea placeholder="Dini Nachricht a üs.." id="nachricht" name="nachricht"></textarea>
                 </div>
-            </article>
-            <article class="small-news">
-                <div class="image-container-small">
-                    <a href="#"> <img src="../img/Gruppenrabatt Bnb.ch img.png" class="smallNewsbild" alt="artikel 1"> </a>
-                    <div class="overlay-text-small">
-                    <h3>Gruppenrabatt BnB.ch</h3>
-                    </div>
-                </div>
-            </article>
-            <article class="medium-news">
-                <div class="image-container-small">
-                    <a href="#"> <img src="../img/SBB.png" class="mediumNewsbild" alt="artikel 1"> </a>
-                    <div class="overlay-text-small">
-                    <h3>SBB-Spezial für Frühbucher</h3>
-                    </div>
-                </div>
-            </article>
+                <button class="transparentYellowButton" type="submit">Jetzt Senden</button>
+            </form>
         </div>
     </main>
     <footer>
