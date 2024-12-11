@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Helvetica';
-  src: url('Helvetica.ttc') format('truetype');
+  font-family: 'HelveticaNeue';
+  src: url('HelveticaNeue') /*format('truetype')*/;
 }
 
 :root {
@@ -9,7 +9,7 @@
   --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 * {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'HelveticaNeue'/*, sans-serif*/;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
@@ -42,7 +42,8 @@ button{
   text-align: left;
   font-size: 14px;
   color: var(--primary-color);
-  border: 0
+  border: 0;
+  font-weight: bold;
 }
 
 .yellowButton{
@@ -50,7 +51,7 @@ button{
 }
 
 .yellowButton:hover{
-  background-color: transparent;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
@@ -77,25 +78,6 @@ button{
   background-color: var(--secondary-color);
   color: var(--primary-color);
   text-shadow: none;
-}
-
-#search-icon-button{
-  display: none;
-  position: relative;
-  height: 30px0px;
-  overflow: hidden;
-  box-sizing: border-box;
-  text-align: left;
-  font-size: 14px;
-  border: 0
-}
-
-#search-button:active ~ #search-bar{
-  display: inline;
-}
-
-#search-bar{
-  display: none;
 }
 
 /* Homepage styling*/
@@ -186,6 +168,8 @@ button{
 
 .prototype p{
   font-size: 48px;
+  font-weight: bold;
+  line-height: auto;
 }
 
 .prototype img{
@@ -196,6 +180,7 @@ button{
 .top-news h1{
   margin-left: 30px;
   font-size: 45.75px;
+  font-weight: bold;
   color: var(--secondary-color);
 }
 
@@ -216,13 +201,13 @@ button{
 }
 
 .news-img{
-
+  
 }
 
 .zwei_ueberschriften{
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 17px;
+  left: 17px;
 }
 
 .zwei_ueberschriften a{
@@ -232,12 +217,14 @@ button{
 
 .zwei_ueberschriften h2{
   font-size: 24px;
+  font-weight: bold;
   color: var(--secondary-color);
   margin-bottom: 5px;
 }
 
 .zwei_ueberschriften h3{
   font-size: 16px;
+  font-weight:  bold;
   color: var(--secondary-color);
   margin-top: 5px;
 }
@@ -250,6 +237,7 @@ button{
 .reviews h1{
   margin-left: 30px;
   font-size: 34px;
+  font-weight: bold;
 }
 
 .review-items{
@@ -357,12 +345,14 @@ footer a, .footer-links, .some-links{
 .overlay-text h2 {
   font-size: 48px;
   color: var(--secondary-color);
+  font-weight: bold;
 }
 
 .grossenewsbilder{
   display: block; /* Ensure no extra space around the image */
   width: 100%; /* Optional: Adjust to control image size */
   height: auto;
+  border-radius: 8px;
 }
 
 .allNews{
@@ -416,11 +406,13 @@ footer a, .footer-links, .some-links{
   font-size: 24px;
   margin: 5px 0;
   color: #f8fffa;
+  font-weight: bold;
 }
 
 .subtitle{
   font-size: 45.75px;
   color: #fff;
+  font-weight: bold;
   margin-left: 30px;
 }
 
@@ -502,6 +494,7 @@ footer a, .footer-links, .some-links{
 .answers{
   display: none;
   margin-top: 10px;
+  margin-right: 25px;
   text-align: left;
 }
 
@@ -515,8 +508,9 @@ footer a, .footer-links, .some-links{
 }
 
 .questions-container h1{
-  margin-left: 30px;
+  margin-left: 0px;
   width: 70%;
+  font-weight: bold;
 }
 
 .questions {
@@ -537,6 +531,7 @@ footer a, .footer-links, .some-links{
   text-align: left;
   flex: 5;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .questions img{
@@ -583,6 +578,7 @@ footer a, .footer-links, .some-links{
 .contact h1{
   font-size: 45.75px;
   color: var(--secondary-color);
+  font-weight: bold;
 }
 
 .form-container{
@@ -836,20 +832,7 @@ textarea:focus{
 }
 
 @media (max-width: 1080px) {
-  #search-icon-button{
-    display: inline-block;
-    position: relative;
-    height: 40px;
-    overflow: hidden;
-    border: 0;
-    background-color: transparent;
-  }
-
   #download-button{
-    display: none;
-  }
-
-  #search-button{
     display: none;
   }
 
