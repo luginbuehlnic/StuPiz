@@ -178,8 +178,16 @@ button{
 }
 
 .prototype img{
+  max-height: 700px;
+  width: auto;
+}
+
+.prototyoe-img{
   flex: 1.6;
   margin-right: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .top-news h1{
@@ -206,7 +214,8 @@ button{
 }
 
 .news-img{
-  
+  max-width: 314px;
+  height: auto;
 }
 
 .zwei_ueberschriften{
@@ -272,6 +281,7 @@ button{
 .review-container img{
   display: block;
   width: 100%;
+  max-width: 440px;
   height: auto;
 }
 
@@ -291,7 +301,6 @@ footer{
 
 footer a, .footer-links, .some-links{
   vertical-align: middle;
-  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -389,6 +398,26 @@ footer a, .footer-links, .some-links{
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 50px;
+}
+
+#InterSport{
+  height: auto;
+  max-width: 675px;
+}
+
+#Saas-Fee{
+  height: auto;
+  max-width: 438px;
+}
+
+#BnB{
+  height: auto;
+  max-width: 322px;
+}
+
+#sbb{
+  height: auto;
+  max-width: 791px;
 }
 
 .image-container-small{
@@ -710,7 +739,7 @@ textarea:focus{
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
-  width: 45%;
+  width: 35%;
   padding: 0;
   margin-bottom: 10px;
   margin-top: 145.65px;
@@ -826,6 +855,13 @@ textarea:focus{
   font-style: normal;
   font-weight: 400;
   line-height: 19.6px;
+}
+
+
+@media (max-width: 2059px){
+  .Team{
+    width: 45%;
+  }
 }
 
 @media (max-width: 1600px){
