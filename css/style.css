@@ -169,6 +169,7 @@ button{
 .prototype-text{
   flex: 1.5;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .prototype p{
@@ -627,6 +628,27 @@ footer a, .footer-links, .some-links{
   font-size: 45.75px;
   color: var(--secondary-color);
   font-weight: bold;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 30px;
+}
+
+  
+#contact h3{
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
 }
 
 .form-container{
